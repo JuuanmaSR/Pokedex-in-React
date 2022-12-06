@@ -1,0 +1,33 @@
+.list-of-pokemons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.button-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6vh;
+}
+
+.button-list button {
+    font-size: 4vh;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #00cbff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 4px solid #373737;
+    margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.button-list button:hover {
+    background-color: #DC0A2D;
+    transform: scale(0.9, 0.9);
+    cursor:pointer;
+}
