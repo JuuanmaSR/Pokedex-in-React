@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { PokemonsContextProvider } from './context/PokemonsContext'
+
+import { Switch, Route } from 'wouter'
+import Header from 'Components/Header';
+import Home from 'Pages/Home'
+import SearchResults from 'Pages/SearchResults';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <section className='App-content'>
+        <PokemonsContextProvider>
+          <Switch>
+            <Route
+              component={Home}
+              path='/'
+            />
+            <Route
+              component={SearchResults}
+              path='/search/:keyword'
+            />
+          </Switch>
+        </PokemonsContextProvider>
+      </section>
     </div>
   );
 }
