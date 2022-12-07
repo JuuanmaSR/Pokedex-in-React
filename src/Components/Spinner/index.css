@@ -1,0 +1,16 @@
+.spinner-img {
+    width: 30vh;
+    margin-top: 20vh;
+    animation: rotation 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
