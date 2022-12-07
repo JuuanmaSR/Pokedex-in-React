@@ -102,6 +102,7 @@
 .info-value {
     font-size: 3vh;
     margin-right: 30px;
+    font-weight: bold;
 }
 
 .info-type-value {
@@ -111,6 +112,7 @@
     border-radius: 8px;
     box-shadow: 1px 1px 3px #373737;
     font-size: 3vh;
+    font-weight: bold;
 }
 
 .info-type-value::first-letter {
@@ -125,10 +127,78 @@
 }
 
 .electric {
-    background-color: #fcfd96;
+    background-color: #FBFB72;
     
 }
 
-.plant {
-    background-color: aquamarine;
+.grass {
+    background-color: #27CB4F;
+}
+
+.normal {
+     background-color: #CA98A7;
+}
+
+.fighting {
+    background-color: #EF6138;
+}
+
+.flying {
+    background-color: #93B2C7;
+}
+
+.poison {
+    background-color: #9B69D9;
+}
+
+.ground {
+    background-color: #6E491F;
+}
+
+.rock {
+    background-color: #8B3E22;
+}
+
+.bug {
+    background-color:#3B9950 ;
+}
+
+.ghost {
+    background-color:#906790 ;
+}
+
+.steel {
+    background-color: #42BD94;
+}
+
+.fire {
+    background-color:#FD4C5A ;
+}
+
+.water {
+    background-color: #86A8FC;
+}
+
+.psychic {
+    background-color: #F81C91;
+}
+
+.ice {
+    background-color: #86D2F5;
+}
+
+.dragon {
+    background-color: #61CAD9;
+}
+
+.dark {
+    background-color: #5A5979;
+}
+
+.fairy {
+    background-color: #EA1369;
+}
+
+.shadow {
+    background-color: #5F20AF;
 }
