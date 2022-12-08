@@ -3,6 +3,7 @@ import { PokemonsContextProvider } from './context/PokemonsContext'
 import { Switch, Route } from 'wouter'
 import Header from 'Components/Header';
 import Home from 'Pages/Home'
+import PageNotFound from 'Pages/PageNotFound';
 import SearchResults from 'Pages/SearchResults';
 import './App.css';
 
@@ -21,6 +22,10 @@ function App() {
             <Route
               component={SearchResults}
               path='/search/:keyword'
+            />
+            <Route
+              component={PageNotFound}
+              path='/invalid-name/:rest*'
             />
           </Switch>
         </PokemonsContextProvider>
