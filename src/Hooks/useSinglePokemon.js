@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 const useSinglePokemon = ({ keyword }) => {
     const [singlePokemon, setSinglePokemon] = useState()
     const [isLoading, setIsLoading] = useState(false)
+    const [error, setError] = useState(false)
     useEffect(() => {
         
         if (!singlePokemon) {
@@ -15,9 +16,10 @@ const useSinglePokemon = ({ keyword }) => {
                 })
                 .catch(error => {
                     setIsLoading(false)
+                    setError(true)
                 })
         }
     }, [singlePokemon, keyword])
-    return { singlePokemon, isLoading }
+    return { singlePokemon, isLoading, error }
 }
 export default useSinglePokemon
