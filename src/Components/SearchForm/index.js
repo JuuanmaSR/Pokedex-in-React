@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from 'wouter'
+import './index.css'
+
 const SearchForm = () => {
     const [_, navigate] = useLocation()
     const [name, setName] = useState('')
@@ -19,7 +21,7 @@ const SearchForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="search-pokemon-form">
             <input placeholder="Pokemon name.." value={name} onChange={handleChange} />
         </form>
     )
