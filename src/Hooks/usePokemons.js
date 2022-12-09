@@ -1,6 +1,5 @@
 import { useEffect, useContext, useState } from "react"
 import getPokemons from "Services/getPokemons"
-import useLocalStorage from "./useLocalStorage"
 import Context from "context/PokemonsContext"
 
 
@@ -9,8 +8,6 @@ const usePokemons = () => {
     const [nextPage, setNextPage] = useState('')
     const [previousPage, setPreviousPage] = useState('')
     const [isLoading, setIsLoading] = useState(false)
-    // const [indice, setIndice] = useState(0)
-    // const [listValue, setListValue] = useLocalStorage({ itemName: `pokemons_${indice}`, initialValue: [] })
 
     useEffect(() => {
         setIsLoading(true)
@@ -20,8 +17,6 @@ const usePokemons = () => {
                 setNextPage(next)
                 setPreviousPage(previous)
                 setIsLoading(false)
-                // setIndice(indice + 1)
-                // setListValue(pokemons)
             })
             .catch(error => {
                 setIsLoading(false)
@@ -38,8 +33,6 @@ const usePokemons = () => {
                 setNextPage(next)
                 setPreviousPage(previous)
                 setIsLoading(false)
-                // setIndice(indice + 1)
-                // setListValue(pokemons)
             })
             .catch(error => {
                 setIsLoading(false)
