@@ -1,6 +1,5 @@
 import { useEffect, useContext, useState } from "react"
 import getPokemons from "Services/getPokemons"
-import useLocalStorage from "./useLocalStorage"
 import Context from "context/PokemonsContext"
 
 
