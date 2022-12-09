@@ -4,7 +4,7 @@ import './index.css'
 
 
 const Card = ({ pokemon }) => {
-    const { name, type, imageUrl, base_experience } = pokemon
+    const { name, type, imageUrl, base_experience, weight, height } = pokemon
     return <>
         <div className={`Card-container ${type}`}>
             <div className="img-container">
@@ -25,6 +25,14 @@ const Card = ({ pokemon }) => {
                     <div className="info-content">
                         <strong className="info-label">TYPE</strong>
                         <p className={`info-type-value ${type}`}>{type || 'undefined'}</p>
+                    </div>
+                    <div className="info-content">
+                        <strong className="info-label">WEIGHT</strong>
+                        <p className="info-value">{weight}</p>
+                    </div>
+                    <div className="info-content">
+                        <strong className="info-label">HEIGHT</strong>
+                        <p className="info-value">{height}</p>
                     </div>
                 </div>
 
