@@ -14,3 +14,9 @@
 .search-pokemon-form input:focus {
     transform: scale(1.09);
 }
+
+@media only screen and (max-width: 768px)  {
+    .search-pokemon-form input:focus {
+        transform: scale(1.06);
+    }
+}

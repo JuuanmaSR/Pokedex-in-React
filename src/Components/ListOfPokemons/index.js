@@ -17,8 +17,8 @@ const ListOfPokemons = ({ pokemons }) => {
 
         </div>
         <div className="button-list">
-            <button  onClick={getPreviousPage}>Anterior</button>
-            <button  onClick={getNextPage}>Siguiente</button>
+            <button  onClick={getPreviousPage}>Previous</button>
+            <button  onClick={getNextPage}>Next</button>
         </div>
     </>
 }

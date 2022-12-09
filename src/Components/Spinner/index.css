@@ -14,3 +14,9 @@
         transform: rotate(359deg);
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .spinner-img {
+        width: 40vw;
+    }
+}

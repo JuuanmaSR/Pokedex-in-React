@@ -39,13 +39,12 @@
     height: 1.5rem;
     top: 4px;
     right: 4px;
-    transition: transform 250ms ease-in-out, transform 150ms ease;
+    transition: transform 150ms ease-in-out;
 
 }
 
 .img-lupa:hover{
     cursor: pointer;
-    /* transform: scale(1.5,1.5); */
     transform: translate(-3px, 2px);
     
 }
