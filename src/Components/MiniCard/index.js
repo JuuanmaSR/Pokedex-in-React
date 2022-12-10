@@ -19,4 +19,4 @@ const MiniCard = ({ name }) => {
     </>
 }
 
-export default MiniCard
+export default React.memo(MiniCard)

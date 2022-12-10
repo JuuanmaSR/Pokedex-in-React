@@ -1,6 +1,6 @@
+import { Switch, Route } from 'wouter'
 import { PokemonsContextProvider } from './context/PokemonsContext'
 
-import { Switch, Route } from 'wouter'
 import Header from 'Components/Header';
 import Home from 'Pages/Home'
 import PageNotFound from 'Pages/PageNotFound';

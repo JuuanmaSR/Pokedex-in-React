@@ -41,4 +41,4 @@ const Card = ({ pokemon }) => {
     </>
 }
 
-export default React.memo(Card)
+export default Card
