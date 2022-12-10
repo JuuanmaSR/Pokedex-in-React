@@ -6,17 +6,18 @@ import ListOfPokemons from "Components/ListOfPokemons";
 import Spinner from "Components/Spinner";
 
 const Home = () => {
-    const { pokemons, isLoading } = usePokemons()
+    const { pokemons, isLoading, getNextPage, getPreviousPage } = usePokemons()
     if (isLoading) {
         return (
             <>
                 <Helmet>
                     <title>Loading...</title>
                 </Helmet>
-                <Spinner/>
+                <Spinner />
             </>
         )
     }
+    
     return <>
         <Helmet>
             <title>Pokedex | Home</title>
@@ -24,6 +25,8 @@ const Home = () => {
         <SearchForm />
         <ListOfPokemons
             pokemons={pokemons}
+            getNextPage={getNextPage}
+            getPreviousPage={getPreviousPage}
         />
 
 

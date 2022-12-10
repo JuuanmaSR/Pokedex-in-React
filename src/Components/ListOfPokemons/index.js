@@ -1,10 +1,8 @@
 import React from "react";
-import usePokemons from "Hooks/usePokemons";
 import MiniCard from "Components/MiniCard";
 import './index.css'
 
-const ListOfPokemons = ({ pokemons }) => {
-    const { getNextPage, getPreviousPage } = usePokemons()
+const ListOfPokemons = ({ pokemons, getNextPage, getPreviousPage }) => {
 
     return <>
         <div className="list-of-pokemons">
