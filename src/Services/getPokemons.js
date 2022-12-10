@@ -13,7 +13,7 @@ const fromApiResponseToPokemons = apiResponse => {
 }
 
 
-const getPokemons = ({url}) => {
+const getPokemons = ({ url }) => {
     let apiUrl = url ? url : `${BASE_URL}/pokemon`
     return fetch(apiUrl)
         .then(response => {

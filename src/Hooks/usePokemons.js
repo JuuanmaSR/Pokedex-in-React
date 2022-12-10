@@ -4,10 +4,10 @@ import Context from "context/PokemonsContext"
 
 
 const usePokemons = () => {
+    const [isLoading, setIsLoading] = useState(false)
     const { pokemons, setPokemons } = useContext(Context)
     const [nextPage, setNextPage] = useState('')
     const [previousPage, setPreviousPage] = useState('')
-    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         setIsLoading(true)
