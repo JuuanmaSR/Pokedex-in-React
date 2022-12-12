@@ -22,7 +22,7 @@ const SearchForm = () => {
 
     return (
         <form onSubmit={handleSubmit} className="search-pokemon-form">
-            <input placeholder="Pokemon name.." value={name} onChange={handleChange} />
+            <input placeholder="Pokemon name..." value={name} onChange={handleChange} />
         </form>
     )
 }
